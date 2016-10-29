@@ -8,29 +8,27 @@ app.config(function($routeProvider) {
             templateUrl : 'views/home.html', 
         })
         
-       .when('/web', {
-            templateUrl : 'views/web.html',
+       .when('/nodes', {
+            templateUrl : 'views/nodes.html',
         }) 
         
         .when('/tools', {
             templateUrl : 'views/tools.html',
         }) 
         
-        .when('/matter', {
-            templateUrl : 'views/matter.html',
+        .when('/work', {
+            templateUrl : 'views/work.html',
         }) 
         
-        .when('/next', {
-            templateUrl : 'views/next.html',
+        .when('/learn', {
+            templateUrl : 'views/learn.html',
+        }) 
+        
+        .when('/deploy', {
+            templateUrl : 'views/deploy.html',
         }) 
         
         .otherwise({redirectTo:'/home'})
 
 });
 
-$scope.collapseMenu = function() {
-    if ($(window).width() <= 768) {
-        console.log('hiding');
-        $scope.navCollapsed = true;
-    }
-}
