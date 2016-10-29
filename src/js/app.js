@@ -8,8 +8,8 @@ app.config(function($routeProvider) {
             templateUrl : 'views/home.html', 
         })
         
-       .when('/webs', {
-            templateUrl : 'views/webs.html',
+       .when('/web', {
+            templateUrl : 'views/web.html',
         }) 
         
         .when('/tools', {
