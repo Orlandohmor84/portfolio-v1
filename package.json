@@ -28,7 +28,6 @@
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^5.0.0",
     "less-plugin-autoprefix": "^1.5.1"
-    "yo": "^1.8.5"
   },
   "dependencies": {
     "static-server": "^2.0.3"
