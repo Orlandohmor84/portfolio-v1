@@ -21,7 +21,7 @@ var imageminPngquant = require('imagemin-pngquant');
 var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 
 //File paths
-var SCRIPTS_PATH = './src/js/**/*.js';
+//var SCRIPTS_PATH = './src/js/**/*.js';
 var LESS_PATH = './less/styles.less';
 var IMAGES_PATH = './src/img/**/*.{png,jpg,jpeg,svg,gif}';
 
@@ -47,7 +47,7 @@ gulp.task('styles', function() {
 //Scripts
 gulp.task('scripts', function() {
 	console.log('starting scripts task');
-	return gulp.src(SCRIPTS_PATH)
+	return gulp.src(['./vendor/angular-1.5.8/angular.min.js', './vendor/angular-1.5.8/angular-route.min.js','./vendor/angular-1.5.8/angular-animate.min.js', './vendor/jquery/jquery-2.2.4.min.js', './vendor/bootstrap-3.3.7/js/bootstrap.min.js', './src/js/script.js'])
 	.pipe(plumber(function(err) {
 		console.log('Scripts Task Error');
 		console.log(err);

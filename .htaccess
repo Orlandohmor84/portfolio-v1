@@ -3,8 +3,8 @@ ErrorDocument 404 404.html
 RewriteEngine on
 
 #Force non-www:
-RewriteCond %{HTTP_HOST} ^www\.ibuilwebs\.net [NC]
-RewriteRule ^(.*)$ http://ibuildwebs.net/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.ibuilweb\.site [NC]
+RewriteRule ^(.*)$ http://ibuildweb.site/$1 [L,R=301]
 
 #Blocks common botnet scripts that automatically look for software vulnerabilities:
 RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
@@ -42,7 +42,3 @@ Header unset X-Powered-By
 <IfModule mod_headers.c>
 Header set X-XSS-Protection "1; mode=block"
 </IfModule>
-
-#Redirect's IP address to site domain
-RewriteCond %{HTTP_HOST} ^107\.180\.0\.228
-RewriteRule (.*) http://ibuildwebs.net/$1 [R=301,L]
