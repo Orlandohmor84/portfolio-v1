@@ -1,5 +1,5 @@
 {
-  "name": "newsite",
+  "name": "devibuildwebsolutions",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,11 +7,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://Orlandohmor@bitbucket.org/???/???.git"
+    "url": "git+https://Orlandohmor@bitbucket.org/ibuildwebs/plain.git"
   },
   "author": "Orlando Morales",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/???/???#readme",
+  "homepage": "https://Orlandohmor@bitbucket.org/ibuildwebs/plain/#readme",
   "description": "",
   "devDependencies": {
     "bower": "^1.7.9",

@@ -1,6 +1,4 @@
-# [New Site](http://ibuildweb.site/)
-
-Website For New Site
+# [Dev.iBuildWeb.Solutions](http://dev.ibuildweb.solutions/)
 
 ## Workflow
 
@@ -11,8 +9,8 @@ Website For New Site
 
 ## Bugs and Issues
 
-Find a bug or an issue with this website? [Open a new issue](https://Orlandohmor@bitbucket.org/ibuildwebs/plain/issues) here on Bitbucket or email the Orlando at orlando@ibuildweb.site
+Find a bug or an issue with this website? [Open a new issue](https://Orlandohmor@bitbucket.org/ibuildwebs/plain/issues) here on Bitbucket
 
 ## Copyright and License
 
-Coming Soon
+Do what you want.
