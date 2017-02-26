@@ -1,7 +1,7 @@
 /*! ----------
 Style sheet for dev.ibuildweb.solutions
 Author: Orlando Morales
-Last Date Modified: 02/11/2017
+Last Date Modified: 02/25/2017
 ------------- */
 @import "../../vendor/bootstrap-3.3.7/font-awesome/css/font-awesome.min.css";
 @import "../../vendor/bootstrap-3.3.7/css/bootstrap.min.css";
@@ -13,6 +13,13 @@ Sections
 ---------- */
 /*----- Fonts -----*/
 /*----- Global -----*/
+	figure {
+		margin-bottom: 20px;
+	}
+	figcaption {
+		text-align: center;
+		font-size: 1.5em;
+	} 
 	.footer {
 		margin-top: 20px;
 		text-align: center;
