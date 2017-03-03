@@ -1,95 +1,46 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
+var gulp = require('gulp'); 
+var gulpsync = require('gulp-sync')(gulp);
 var livereload = require('gulp-livereload');
-var concat = require('gulp-concat');
-var minifyCss = require('gulp-clean-css');
-var autoprefixer = require('gulp-autoprefixer');
-var plumber  = require('gulp-plumber');
-var sourcemaps = require('gulp-sourcemaps');
-//var babel = require('gulp-babel');
+var requireDir = require('require-dir');
+var htmlmin = require('gulp-htmlmin');
+requireDir('./gulp-tasks/');
+requireDir('./gulp-tasks/less/');
+requireDir('./gulp-tasks/scripts/');
+requireDir('./gulp-tasks/img/');
+requireDir('./gulp-tasks/html/');
 
-//LESS Plugins
-var less = require('gulp-less');
-var LessAutoprefix = require('less-plugin-autoprefix');
-var lessautoprefix = new LessAutoprefix({
-	browsers: ['last 2 versions']
-});
+//Images Paths
+var IMG_PATH = './src/assets/img/**/*.{png,jpg,jpeg,svg,gif}';
+var ICONS_PATH = './src/assets/img/icons/*.{png,jpg,jpeg,svg,gif}';
+var LOGOS_PATH = './src/assets/img/logos/*.{png,jpg,jpeg,svg,gif}';
+var SCREENSHOTS_PATH = './src/assets/img/screenshots/*.{png,jpg,jpeg,svg,gif}';
 
-//Image Compression
-var imagemin = require('gulp-imagemin');
-var imageminPngquant = require('imagemin-pngquant');
-var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 
-//File paths
-//var SCRIPTS_PATH = './src/js/**/*.js';
-var LESS_PATH = './less/styles.less';
-var IMAGES_PATH = './src/img/**/*.{png,jpg,jpeg,svg,gif}';
+//Code Paths
+var LESS_PATH = './src/assets/less/styles.less';
+var SCRIPTS_PATH = './src/assets/js/script.js';
+var SRC_PATH = './src/*.html';
+var VIEWS_PATH = './src/views/*.html';
 
-//Styles for LESS
-gulp.task('styles', function() {
-	console.log('starting styles task');
-	return gulp.src('./less/styles.less')
-	.pipe(plumber(function(err) {
-		console.log('Styles Task Error');
-		console.log(err);
-		this.emit('end');
-	}))
-	.pipe(sourcemaps.init())
-	.pipe(less({
-		
-	}))
-	.pipe(minifyCss())
-	.pipe(sourcemaps.write())
-	.pipe(gulp.dest('./dist/css'))
-	.pipe(livereload());
-});
-
-//Scripts
-gulp.task('scripts', function() {
-	console.log('starting scripts task');
-	return gulp.src(['./vendor/angular-1.5.8/angular.min.js', './vendor/angular-1.5.8/angular-route.min.js','./vendor/angular-1.5.8/angular-animate.min.js', './vendor/jquery/jquery-2.2.4.min.js', './vendor/bootstrap-3.3.7/js/bootstrap.min.js', './src/js/script.js'])
-	.pipe(plumber(function(err) {
-		console.log('Scripts Task Error');
-		console.log(err);
-		this.emit('end');
-	}))
-	.pipe(sourcemaps.init())
-	/*.pipe(babel({
-		presets : ['es2015']
-	}))*/
-	.pipe(uglify())
-	.pipe(concat('scripts.js'))
-	.pipe(sourcemaps.write())
-	.pipe(gulp.dest('./dist/js'))
-	.pipe(livereload());
-});
-
-//Images
-gulp.task('images', function() {
-	console.log('starting images task');
-	return gulp.src(IMAGES_PATH)
-	.pipe(imagemin(
-		[
-			imagemin.gifsicle(),
-			imagemin.jpegtran(),
-			imagemin.optipng(),
-			imagemin.svgo(),
-			imageminPngquant(),
-			imageminJpegRecompress()
-		]
-	))
-	.pipe(gulp.dest('./dist/img'));
+gulp.task('views', function() {
+	return gulp.src([VIEWS_PATH])
+		.pipe(htmlmin({collapseWhitespace: true}))
+		.pipe(gulp.dest('./public/includes'));
 });
 
 //Watch
 gulp.task('watch', ['default'], function() {
 	console.log('starting watch task');
-	require('./server.js');
-	livereload.listen();
-	gulp.watch(SCRIPTS_PATH, ['scripts']);
+	require('./serverBuild.js');
+	//livereload.listen();
+	gulp.watch(IMG_PATH, ['scripts']);
 	gulp.watch(LESS_PATH, ['styles']);
+	gulp.watch(SRC_PATH, ['html']);
+    gulp.watch(VIEWS_PATH, ['views']);
 });
 
-gulp.task('default', ['styles', 'scripts', 'images'], function() {
+
+//Default Task
+gulp.task('default', ['styles', 'scripts', 'html', 'views', 'app'], function() {
 	console.log('starting default task');
 });
