@@ -8,7 +8,8 @@
 * Utilize Gulp task runners to automate workflow
 
 ## Release History
-	- 1.0.0 - I'm getting to it.
+    - 1.0.1 - 03/13/2017 - Split AIG and Vaca Exclusive.
+	- 1.0.0 - 11/04/2017 - Initial Release.
 
 ## Bugs and Issues
 
