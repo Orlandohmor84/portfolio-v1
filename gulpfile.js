@@ -18,14 +18,15 @@ var SCREENSHOTS_PATH = './src/assets/img/screenshots/*.{png,jpg,jpeg,svg,gif}';
 
 //Code Paths
 var LESS_PATH = './src/assets/less/styles.less';
-var SCRIPTS_PATH = './src/assets/js/script.js';
+var SCRIPTS_PATH = './src/assets/js/scripts.js';
+var APP_PATH = './src/assets/app/app.js';
 var SRC_PATH = './src/*.html';
 var VIEWS_PATH = './src/views/*.html';
 
 gulp.task('views', function() {
 	return gulp.src([VIEWS_PATH])
 		.pipe(htmlmin({collapseWhitespace: true}))
-		.pipe(gulp.dest('./public/includes'));
+		.pipe(gulp.dest('./public/views'));
 });
 
 //Watch
