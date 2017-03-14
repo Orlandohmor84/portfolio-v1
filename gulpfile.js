@@ -34,7 +34,7 @@ gulp.task('watch', ['default'], function() {
 	console.log('starting watch task');
 	require('./serverBuild.js');
 	//livereload.listen();
-	gulp.watch(IMG_PATH, ['scripts']);
+	gulp.watch(SCRIPTS_PATH, ['scripts']);
 	gulp.watch(LESS_PATH, ['styles']);
 	gulp.watch(SRC_PATH, ['html']);
     gulp.watch(VIEWS_PATH, ['views']);

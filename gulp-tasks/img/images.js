@@ -31,6 +31,23 @@ gulp.task('images-icons', function() {
 	.pipe(gulp.dest('./public/assets/img/icons/'));
 });
 
+//Compresses Images
+gulp.task('images-screenshots', function() {
+	console.log('starting images task');
+	return gulp.src(SCREENSHOTS_PATH)
+	.pipe(imagemin(
+		[
+			imagemin.gifsicle(),
+			imagemin.jpegtran(),
+			imagemin.optipng(),
+			imagemin.svgo(),
+			imageminPngquant(),
+			imageminJpegRecompress()
+		]
+	))
+	.pipe(gulp.dest('./public/assets/img/screenshots/'));
+});
+
 //Resize Images
 gulp.task('images-resize', function() {
 	console.log('starting featured-atlantic task');
