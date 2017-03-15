@@ -8,6 +8,7 @@
 * Utilize Gulp task runners to automate workflow
 
 ## Release History
+    - 1.2.0 - 03/15/2017 - Added Superior Income Booster
     - 1.1.0 - 03/14/2017 - Added Mathis & Sons.
     - 1.0.1 - 03/13/2017 - Split AIG and Vaca Exclusive.
 	- 1.0.0 - 11/04/2017 - Initial Release.
