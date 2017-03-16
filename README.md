@@ -11,6 +11,7 @@
 * Utilize Gulp task runners to automate workflow
 
 ## Release History
+    - 1.2.2 - 03/16/2017 - Fixed bug with Google Analytics script
     - 1.2.1 - 03/16/2017 - SIB image edit
     - 1.2.0 - 03/15/2017 - Added Superior Income Booster
     - 1.1.0 - 03/14/2017 - Added Mathis & Sons.

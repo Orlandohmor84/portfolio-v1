@@ -23,7 +23,7 @@ gulp.task('scripts', function() {
 		presets : ['es2015']
 	}))
 	.pipe(uglify())
-	.pipe(concat('app.js'))
+	.pipe(concat('scripts.js'))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('./public/assets/js'))
 	.pipe(livereload());
