@@ -26,15 +26,15 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<h1>Problem</h1>
-			<p>Speed-to-Market: Marketing and business initiatives implementation when requiring web coding.</p>
+			<p>Speed-to-Market: Marketing and business initiatives implementation delayed when requiring web coding.</p>
 			<h1>Solution</h1>
 			<p>Agile Full Stack JavaScript Developer UI/UX Designer Digital Marketing Strategist</p>
 			<p>Meet Orlando Morales. This is my story. Told in content-driven design...</p>
-			<p>Select position you are looking to fill to optimize experience.</p>
+			<p>For optimal experience select position you are looking to fill.</p>
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-sm-offset-3"> 
 			    	<form role="form">
-						<select class="form-control" id="selectPosition">
+						<select class="form-control" id="selectPosition" ng-change="positionHighlight()" ng-model="position">
 							<option value>(select one)</option>
 							<option>Developer</option>
 							<option>Digital Marketer</option>
@@ -43,8 +43,8 @@
 						</select>
 						<p class="cta"><a class="btn btn-primary btn-lg" role="button" href="#nodes">See Nodes</a></p>
 					</form>
-					<p class="developer">HTML5</p>
-					<p class="marketer">Mailchimp</p>
+					<!--<p class="developer">HTML5</p>
+					<p class="marketer">Mailchimp</p>-->
 				</div><!-- /.col -->
 			</div><!-- /.row -->
 			<img class="img-responsive" src="assets/img/icons/screen-1.png">
