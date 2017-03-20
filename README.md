@@ -11,6 +11,7 @@
 * Utilize Gulp task runners to automate workflow
 
 ## Release History
+    - 1.2.4 - 03/20/2017 - Fixed gulp bug and edited home content.
     - 1.2.3 - 03/17/2017 - Added prerendering.
     - 1.2.2 - 03/16/2017 - Fixed bug with Google Analytics script
     - 1.2.1 - 03/16/2017 - SIB image edit
