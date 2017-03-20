@@ -32,6 +32,26 @@ app.config(function($routeProvider) {
 
 });
 
+app.controller('mainController', function($scope) {
+	$scope.title = 'Dev.iBuildWeb.Solutions';
+});
+
+//Toggles job field selection skill highlights
+
+$( "#selectPosition" ).change(function() {
+  alert( "Handler for .change() called." );
+});
+/*
+$(document).on('change', '#selectPosition', function() { 
+	if($(this).val === 'Developer'){
+		$('.marketer').removeClass('highlight');
+		$('.developer').addClass('highlight');
+	}else if($(this).val === 'Digital Marker') {
+		$('.developer').addClass('highlight');
+		$('.marketer').addClass('highlight');
+	}
+});
+*/
 //Close mobile nav menu after clicking a link
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
