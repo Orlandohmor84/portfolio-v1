@@ -6,32 +6,102 @@ app.config(function($routeProvider) {
     $routeProvider
         .when('/home', {
             templateUrl : 'views/home.html', 
+            controller: 'mainController'
         })
         
        .when('/nodes', {
             templateUrl : 'views/nodes.html',
+            controller: 'mainController'
         }) 
         
         .when('/tools', {
             templateUrl : 'views/tools.html',
+            controller: 'mainController'
         }) 
         
         .when('/work', {
             templateUrl : 'views/work.html',
+            controller: 'mainController'
         }) 
         
         .when('/learn', {
             templateUrl : 'views/learn.html',
+            controller: 'mainController'
         }) 
         
         .when('/deploy', {
             templateUrl : 'views/deploy.html',
+            controller: 'mainController'
         }) 
         
         .otherwise({redirectTo:'/home'})
 
 });
 
+app.controller('mainController', function($scope) {
+	$scope.title = 'Dev.iBuildWeb.Solutions';
+    $scope.positionHighlight = function() {
+        console.log('Position changed.');
+        
+    };
+});
+
+//Toggles job field selection skill highlights
+
+/*
+//JavaScript 1
+        if(document.getElementById('selectPosition').value === 'Developer'){
+            console.log('Developer selected.');
+            var dev = getElementByClassName('developer');
+            dev.className += 'highlight';
+            
+        }else if(document.getElementById('selectPosition').value === 'Digital Marker') {
+            console.log('Digital marketer selected.');
+        };
+*/
+
+/*
+//jQuery 3
+$(document).on('change','#selectPosition',function() {
+   console.log('Changing position'); 
+   if($(this).val === 'Developer'){
+       console.log('Developer selected.');
+	   $('p.marketer').removeClass('highlight');
+	   $('p.developer').addClass('highlight');
+	}else if($(this).val === 'Digital Marker') {
+		$('p.developer').addClass('highlight');
+		$('p.marketer').addClass('highlight');
+	}
+});
+*/
+
+/*
+//jQuery 2
+$( '#selectPosition' ).on('change', function() {
+    console.log('Changing position');
+    if($(this).val === 'Developer'){
+       console.log('Developer selected.');
+	   $('.marketer').removeClass('highlight');
+	   $('.developer').addClass('highlight');
+	}else if($(this).val === 'Digital Marker') {
+		$('.developer').addClass('highlight');
+		$('.marketer').addClass('highlight');
+	}
+});
+*/
+
+/*
+//jQuery 1
+$(document).on('change', '#selectPosition', function() { 
+	if($(this).val === 'Developer'){
+		$('.marketer').removeClass('highlight');
+		$('.developer').addClass('highlight');
+	}else if($(this).val === 'Digital Marker') {
+		$('.developer').addClass('highlight');
+		$('.marketer').addClass('highlight');
+	}
+});
+*/
 //Close mobile nav menu after clicking a link
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') ) {
