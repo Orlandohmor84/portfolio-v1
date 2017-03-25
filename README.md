@@ -1,6 +1,6 @@
 # [Dev.iBuildWeb.Solutions](http://dev.ibuildweb.solutions/)
 * Portfolio Web App for Orlando Morales
-* Version 1.2
+* Version 1.3
 
 ## Workflow
 
@@ -11,6 +11,7 @@
 * Utilize Gulp task runners to automate workflow
 
 ## Release History
+    - 1.3.0 - 03/25/2017 - Added Vaca Agent Dashboard.
     - 1.2.4 - 03/20/2017 - Fixed gulp bug and edited home content.
     - 1.2.3 - 03/17/2017 - Added prerendering.
     - 1.2.2 - 03/16/2017 - Fixed bug with Google Analytics script
