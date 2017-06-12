@@ -48,7 +48,7 @@ gulp.task('generate-favicon', function(done) {
 				pictureAspect: 'noChange',
 				themeColor: '#ffffff',
 				manifest: {
-					name: 'Solutions Developer',
+					name: 'iBuildWebSite',
 					display: 'standalone',
 					orientation: 'notSet',
 					onConflict: 'override',
