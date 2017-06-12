@@ -7,7 +7,7 @@ var babel = require('gulp-babel');
 var sourcemaps = require('gulp-sourcemaps');
 var livereload = require('gulp-livereload');
 
-var SCRIPTS_PATH = './src/assets/js/scripts.js';
+var SCRIPTS_PATH = './src/assets/js/*.js';
 
 //Scripts
 gulp.task('scripts', function() {

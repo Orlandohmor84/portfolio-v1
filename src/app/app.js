@@ -4,8 +4,8 @@ var app = angular.module('portfolioApp', ['ngRoute']);
 
 app.config(function($routeProvider) {
     $routeProvider
-        .when('/home', {
-            templateUrl : 'views/home.html', 
+        .when('/start', {
+            templateUrl : 'views/start.html', 
             controller: 'mainController'
         })
         
@@ -34,12 +34,12 @@ app.config(function($routeProvider) {
             controller: 'mainController'
         }) 
         
-        .otherwise({redirectTo:'/home'})
+        .otherwise({redirectTo:'/start'})
 
 });
 
 app.controller('mainController', function($scope) {
-	$scope.title = 'Dev.iBuildWeb.Solutions';
+	$scope.title = 'iBuildWeb.Site';
     $scope.positionHighlight = function() {
         console.log('Position changed.');
         

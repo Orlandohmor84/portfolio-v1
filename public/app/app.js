@@ -4,8 +4,8 @@ var app = angular.module('portfolioApp', ['ngRoute']);
 
 app.config(function($routeProvider) {
     $routeProvider
-        .when('/home', {
-            templateUrl : 'views/home.html', 
+        .when('/start', {
+            templateUrl : 'views/start.html', 
             controller: 'mainController'
         })
         
@@ -34,14 +34,22 @@ app.config(function($routeProvider) {
             controller: 'mainController'
         }) 
         
-        .otherwise({redirectTo:'/home'})
+        .otherwise({redirectTo:'/start'})
 
 });
 
 app.controller('mainController', function($scope) {
-	$scope.title = 'Dev.iBuildWeb.Solutions';
+	$scope.title = 'iBuildWeb.Site';
     $scope.positionHighlight = function() {
         console.log('Position changed.');
+        
+    };
+});
+
+//Toggles job field selection skill highlights
+
+/*
+//JavaScript 1
         if(document.getElementById('selectPosition').value === 'Developer'){
             console.log('Developer selected.');
             var dev = getElementByClassName('developer');
@@ -50,12 +58,10 @@ app.controller('mainController', function($scope) {
         }else if(document.getElementById('selectPosition').value === 'Digital Marker') {
             console.log('Digital marketer selected.');
         };
-    };
-});
-
-//Toggles job field selection skill highlights
+*/
 
 /*
+//jQuery 3
 $(document).on('change','#selectPosition',function() {
    console.log('Changing position'); 
    if($(this).val === 'Developer'){
@@ -70,6 +76,7 @@ $(document).on('change','#selectPosition',function() {
 */
 
 /*
+//jQuery 2
 $( '#selectPosition' ).on('change', function() {
     console.log('Changing position');
     if($(this).val === 'Developer'){
@@ -84,6 +91,7 @@ $( '#selectPosition' ).on('change', function() {
 */
 
 /*
+//jQuery 1
 $(document).on('change', '#selectPosition', function() { 
 	if($(this).val === 'Developer'){
 		$('.marketer').removeClass('highlight');
