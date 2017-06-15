@@ -11,6 +11,7 @@
 * Utilize Gulp task runners to automate workflow
 
 ## Release History
+    - 1.7.1 - 06/15/2017 - Content Updates.
     - 1.7.0 - 06/11/2017 - Moved back to iBuildWeb.Site.
     - 1.6.0 - 04/15/2017 - Removed Rogue Runnerz from Nodes and Web Workers.
     - 1.5.0 - 04/08/2017 - Added Jammers Coming Soon screenshot.
