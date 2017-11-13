@@ -20,6 +20,7 @@ var SCREENSHOTS_PATH = './src/assets/img/screenshots/*.{png,jpg,jpeg,svg,gif}';
 var LESS_PATH = './src/assets/less/styles.less';
 var SCRIPTS_PATH = './src/assets/js/scripts.js';
 var APP_PATH = './src/assets/app/app.js';
+var CONTROLLERS_PATH = './src/app/controllers/*.js';
 var SRC_PATH = './src/*.html';
 var VIEWS_PATH = './src/views/*.html';
 
