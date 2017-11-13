@@ -11,10 +11,29 @@ var lessAutoprefix = new LessAutoprefix({
 	browsers: ['last 2 versions']
 });
 
-//Styles for LESS
+//Styles for Main Style Sheet
 gulp.task('styles', function() {
 	console.log('starting styles task');
 	return gulp.src('./src/assets/less/styles.less')
+	.pipe(plumber(function(err) {
+		console.log('Styles Task Error');
+		console.log(err);
+		this.emit('end');
+	}))
+	.pipe(sourcemaps.init())
+	.pipe(less({
+		plugins: [lessAutoprefix]
+	}))
+	.pipe(minifyCss())
+	.pipe(sourcemaps.write())
+	.pipe(gulp.dest('./public/assets/css'))
+	.pipe(livereload());
+});
+
+//Styles for Version Switcher Style Sheet
+gulp.task('styles-version', function() {
+	console.log('starting styles task');
+	return gulp.src('./src/assets/less/version.less')
 	.pipe(plumber(function(err) {
 		console.log('Styles Task Error');
 		console.log(err);

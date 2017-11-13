@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US" data-ng-app="portfolioApp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Agile JavaScript PHP Web Developer Project Manager UI/UX Designer Search Engine Optimizer Security Hardener DevOps Jack of All Trades Consultant and Web Anything Builder">
+    <meta name="author" content="Orlando Morales">
+    <meta name="keywords" content="front end web developer, ui/ux designer, javascript, angularjs, jquery, bootstrap, nodejs, html5, css3, less, gulp, php, git, bitbucket, agile, project manager, project management, seo, devops, copywriter, content editir, web consultant">
+
+    <title>iBuildWeb.Site - Agile JavaScript PHP/Node Web Developer</title>
+		
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@orlando407">
+    <meta name="twitter:title" content="iBuildWeb.Site - Agile Javascript PHP Web Developer">
+    <meta name="twitter:description" content="Agile JavaScript PHP Web Developer Project Manager UI/UX Designer Search Engine Optimizer Security Hardener DevOps Engineer Jack of All Trades Consultant and Web Anything Builder">
+    <meta name="twitter:creator" content="@orlando407">
+    <meta name="twitter:image:src" content="">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+
+    <!-- Open Graph for Facebook and Other Sites -->
+    <meta property="og:title" content="iBuildWeb.Site - Agile Javascript PHP Web Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://dev.ibuildweb.site">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Agile JavaScript PHP Front End Web Developer Project Manager UI/UX Designer Search Engine Optimizer Security Hardener DevOps Jack of All Trades Consultant and Web Anything Builder">
+    <meta property="fb:admins" content="">
+    
+    <link href="../assets/css/styles.css" rel="stylesheet">
+
+    <!-- Vendors -->
+    <script src="../vendor/jquery/jquery-2.2.4.min.js"></script>
+    <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script src="../vendor/angular-1.5.8/angular.min.js"></script>
+    <script src="../vendor/angular-1.5.8/angular-route.min.js"></script>
+
+    <!-- App Scripts -->
+    <script src="app/app.js"></script>
+    <script src="app/controllers/deploy.js"></script>
+    <script src="app/controllers/learn.js"></script>
+    <script src="app/controllers/nodes.js"></script>
+    <script src="app/controllers/start.js"></script>
+    <script src="app/controllers/tools.js"></script>
+    <script src="app/controllers/work.js"></script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "website",
+            "name": "ibuildwebsite",
+            "image": "http://ibuildweb.site/mstile-310x310.png",
+            "description": "Agile JavaScript PHP Web Developer Project Manager UI/UX Designer Search Engine Optimizer Security Hardener DevOps Engineer Jack of All Trades Consultant and Web Anything Builder",
+        }
+            
+    </script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#start" class="navbar-brand">{{ title }}</a>
+            </div><!-- /.navbar-header -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="navTabs" id="versionTab"><a href="../index.html">Version</a></li>
+                    <li class="navTabs active" id="startTab"><a href="#start">Start</a></li>
+                    <li class="navTabs" id="nodesTab"><a href="#nodes">Nodes</a></li>
+                    <li class="navTabs" id="toolsTab"><a href="#tools">Tools</a></li>
+                    <li class="navTabs" id="workTab"><a href="#work">Web Workers</a></li>
+                    <li class="navTabs" id="learnTab"><a href="#learn">Dependencies</a></li>
+                    <li class="navTabs" id="deployTab"><a href="#deploy">Deploy</a></li>
+                </ul>
+            </div><!-- /#navbar -->
+        </div><!-- /.container-fluid -->
+    </nav>
+	
+	<div data-ng-view autoscroll></div>
+
+    <footer class="footer">
+        <p>&copy; 2017 Orlando Morales</p>
+    </footer>
+
+    <script src="../assets/js/scripts.js"></script>
+
+</body>
+</html>

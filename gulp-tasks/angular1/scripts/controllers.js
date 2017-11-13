@@ -7,12 +7,12 @@ var babel = require('gulp-babel');
 var sourcemaps = require('gulp-sourcemaps');
 var livereload = require('gulp-livereload');
 
-var CONTROLLERS_PATH = './src/app/controllers/*.js';
+var ANG1_CONTROLLERS_PATH = './src/angular1/app/controllers/*.js';
 
 //Scripts
-gulp.task('controllers', function() {
+gulp.task('ang1-controllers', function() {
 	console.log('starting controllers task');
-	return gulp.src([CONTROLLERS_PATH])
+	return gulp.src([ANG1_CONTROLLERS_PATH])
 	.pipe(plumber(function(err) {
 		console.log('Controllers Task Error');
 		console.log(err);
@@ -25,6 +25,6 @@ gulp.task('controllers', function() {
 	.pipe(uglify())
 	.pipe(concat('controllers.js'))
 	.pipe(sourcemaps.write())
-	.pipe(gulp.dest('./public/app'))
+	.pipe(gulp.dest('./public/angular1/app'))
 	.pipe(livereload());
 });
