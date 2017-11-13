@@ -12,7 +12,7 @@ var lessAutoprefix = new LessAutoprefix({
 });
 
 //Styles for Main Style Sheet
-gulp.task('styles', function() {
+gulp.task('styles-main', function() {
 	console.log('starting styles task');
 	return gulp.src('./src/assets/less/styles.less')
 	.pipe(plumber(function(err) {
