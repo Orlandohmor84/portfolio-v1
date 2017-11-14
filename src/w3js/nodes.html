@@ -30,6 +30,10 @@
     
     <link href="../assets/css/styles.css" rel="stylesheet">
 
+    <!-- Vendors -->
+    <script src="../vendor/jquery/jquery-2.2.4.min.js"></script>
+    <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+
     <script src="../vendor/w3.js"></script>
     <script src="data/var.js"></script>
     
@@ -172,21 +176,17 @@
 
     <div w3-include-html="includes/footer.html"></div>
 
-    <!-- Vendors -->
-    <script src="../vendor/jquery/jquery-2.2.4.min.js"></script>
-    <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+    
 
     <script src="../assets/js/scripts.js"></script>
 
     <script>
-        w3.includeHTML(data);
+        w3.includeHTML(callback);
         w3.displayObject("general", general);
-        function data() {
-            // code that has to wait goes here
-        }
-        $(document).ready(function() {
-            startTab();
-        });
+        function callback() {
+            $('#general').css('visibility', 'visible');
+            nodesTab();
+        };
     </script>
 
 </body>

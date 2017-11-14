@@ -77,15 +77,12 @@
     <script src="../assets/js/scripts.js"></script>
 
     <script>
-        w3.includeHTML(data);
+        w3.includeHTML(callback);
         w3.displayObject("general", general);
-        function data() {
-            // code that has to wait goes here
-        }
-        
-        $(document).ready(function() {
+        function callback() {
+            $('#general').css('visibility', 'visible');
             startTab();
-        });
+        };
     </script>
 
 </body>

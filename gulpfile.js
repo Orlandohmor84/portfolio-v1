@@ -13,6 +13,9 @@ requireDir('./gulp-tasks/angular1/scripts/');
 requireDir('./gulp-tasks/angular1/html/');
 requireDir('./gulp-tasks/php/');
 requireDir('./gulp-tasks/php/php/');
+requireDir('./gulp-tasks/w3js/');
+requireDir('./gulp-tasks/w3js/html/');
+requireDir('./gulp-tasks/w3js/data/');
 
 //Global Paths
 var IMG_PATH = './src/assets/img/**/*.{png,jpg,jpeg,svg,gif}';
@@ -66,5 +69,27 @@ var SCRIPTS_PATH = './src/angular1/assets/js/scripts.js';
 	//Default Task
 	gulp.task('php-default', ['styles-main', 'scripts', 'php', 'php-includes'], function() {
 		console.log('starting default php task');
+	});
+/*----------- End PHP Taskrunners ----------*/
+
+/*----------- Start W3JS Taskrunners ----------*/
+	//Framework Specific Paths
+	const W3JS_HTML_PATH = 'src/w3js/*.html';
+	const W2JS_INCLUDES_PATH = './src/w3js/includes/**/*.html';
+
+	//Watch
+	gulp.task('w3js-watch', ['w3js-default'], function() {
+		console.log('starting w3js watch task');
+		require('./serverBuild.js');
+		//livereload.listen();
+		gulp.watch(LESS_PATH, ['styles-main']);
+		gulp.watch(W3JS_HTML_PATH, ['w3js']);
+		gulp.watch(W3JS_INCLUDES_PATH, ['w3js-includes']);
+	});
+
+
+	//Default Task
+	gulp.task('w3js-default', ['styles-main', 'scripts', 'w3js-html', 'w3js-includes'], function() {
+		console.log('starting default w3js task');
 	});
 /*----------- End PHP Taskrunners ----------*/

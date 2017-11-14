@@ -1,18 +1,20 @@
 /*! ----------
 Style sheet for ibuildweb.site
 Author: Orlando Morales
-Last Date Modified: 11/12/2017
+Last Date Modified: 11/14/2017
 ------------- */
 @import "src/vendor/bootstrap-3.3.7/font-awesome/css/font-awesome.min.css";
 @import "src/vendor/bootstrap-3.3.7/css/bootstrap.min.css";
 /* -------------
 Sections
  - Fonts
- - Global
- - Media Queries
+ - Global Styles
+ - w3js Styles
 ---------- */
-/*----- Fonts -----*/
-/*----- Global -----*/
+/*----- Start Fonts -----*/
+/*----- End Fonts -----*/
+
+/*----- Start Global Styles -----*/
 	figure {
 		margin-bottom: 20px;
 	}
@@ -42,15 +44,22 @@ Sections
 	.media-object {
 		display: none;
 	}
+	@media screen and (min-width: 480px) {
+		.media-object {
+			display: inline-block;
+		}
+	}
 	.navbar {
 		margin-bottom: 0;
 	}
 	p.cta {
 		text-align: right;
 	}
-/*----- Media Queries -----*/
-	@media screen and (min-width: 480px) {
-		.media-object {
-			display: inline-block;
-		}
+/*----- End Global Styles -----*/
+
+/*----- Start w3js Styles -----*/
+	#general {
+		visibility: hidden;
 	}
+/*----- End w3js Styles -----*/
+	

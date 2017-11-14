@@ -2,16 +2,21 @@
 
     var clearActive = function() {
         $('.navTabs').removeClass('active');
+        console.log('clearActive function completed.');
     };
 
     var startTab = function() {
+        console.log('startTab function started.');
         clearActive();
         $('#startTab').addClass('active');
+        console.log('startTab function completed.');
     };
 
     var nodesTab = function() {
+        console.log('nodesTab function started.');
         clearActive();
         $('#nodesTab').addClass('active');
+        console.log('nodesTab function completed.');
     };
 
     var toolsTab = function() {
