@@ -13,8 +13,7 @@
 
 ## Release History ##
 
-* v2.1.1 - 11/14/2017 - Updated Sitemap.
-* v2.1.0 - 11/14/2017 - Added w3.js Version.
+* v2.1.0 - 11/14/2017 - Added w3.js Version. Updated Sitemap.
 * v2.0.0 - 11/12/2017 - PHP/Angular 1 Template Switcher.
 * v1.7.1 - 06/15/2017 - Content Updates.
 * v1.7.0 - 06/11/2017 - Moved back to iBuildWeb.Site.
