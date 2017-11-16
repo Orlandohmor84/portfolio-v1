@@ -1,7 +1,7 @@
 # [iBuildWeb.Site](http://ibuildweb.site/) #
 
 * Portfolio Web App for Orlando Morales
-* Version 2.1
+* Version 2.2
 
 ## Workflow ##
 
@@ -13,6 +13,7 @@
 
 ## Release History ##
 
+* v2.2.0 - 11/16/2017 - Added jQuery Version. Updated Sitemap.
 * v2.1.0 - 11/14/2017 - Added w3.js Version. Updated Sitemap.
 * v2.0.0 - 11/12/2017 - PHP/Angular 1 Template Switcher.
 * v1.7.1 - 06/15/2017 - Content Updates.
