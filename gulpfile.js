@@ -3,16 +3,30 @@ var gulpsync = require('gulp-sync')(gulp);
 var livereload = require('gulp-livereload');
 var requireDir = require('require-dir');
 var htmlmin = require('gulp-htmlmin');
+
+//Global Tasks
 requireDir('./gulp-tasks/');
 requireDir('./gulp-tasks/html/');
 requireDir('./gulp-tasks/img/');
 requireDir('./gulp-tasks/less/');
 requireDir('./gulp-tasks/scripts/');
+
+//Angular Version Tasks
 requireDir('./gulp-tasks/angular1/');
 requireDir('./gulp-tasks/angular1/scripts/');
 requireDir('./gulp-tasks/angular1/html/');
+
+//jQuery Version Tasks
+requireDir('./gulp-tasks/jquery/');
+requireDir('./gulp-tasks/jquery/less/');
+requireDir('./gulp-tasks/jquery/html/');
+requireDir('./gulp-tasks/jquery/js/');
+
+//PHP Version Tasks
 requireDir('./gulp-tasks/php/');
 requireDir('./gulp-tasks/php/php/');
+
+//W3JS Version Tasks
 requireDir('./gulp-tasks/w3js/');
 requireDir('./gulp-tasks/w3js/html/');
 requireDir('./gulp-tasks/w3js/data/');
@@ -49,6 +63,29 @@ var SCRIPTS_PATH = './src/angular1/assets/js/scripts.js';
 		console.log('starting default angular 1 task');
 	});
 /*----------- End Angular 1 Taskrunners ----------*/
+
+/*----------- Start jQuery Taskrunners ----------*/
+	//Framework Specific Paths
+	const JQUERY_HTML_PATH = 'src/jquery/*.html';
+	const JQUERY_SCRIPTS_PATH = 'src/jquery/js/*.js';
+	const JQUERY_LESS_PATH = 'src/jquery/less/*.less';
+
+	//Watch
+	gulp.task('jquery-watch', ['jquery-default'], function() {
+		console.log('starting jquery watch task');
+		require('./serverBuild.js');
+		//livereload.listen();
+		gulp.watch(LESS_PATH, ['styles-main']);
+		gulp.watch(JQUERY_LESS_PATH, ['jquery-styles']);
+		gulp.watch(JQUERY_SCRIPTS_PATH, ['jquery-scripts']);
+		gulp.watch(JQUERY_SRC_PATH, ['jquery-html']);
+	});
+
+	//Default Task
+	gulp.task('jquery-default', ['styles-main','styles-jquery', 'scripts', 'jquery-html', 'jquery-scripts'], function() {
+		console.log('starting default jquery task');
+	});
+/*----------- End jQuery Taskrunners ----------*/
 
 /*----------- Start PHP Taskrunners ----------*/
 	//Framework Specific Paths
