@@ -13,6 +13,7 @@
 
 ## Release History ##
 
+* v2.2.1 - 11/19/2017 - Fixed mobile spacing issue with buttons.
 * v2.2.0 - 11/16/2017 - Added jQuery Version. Updated Sitemap.
 * v2.1.0 - 11/14/2017 - Added w3.js Version. Updated Sitemap.
 * v2.0.0 - 11/12/2017 - PHP/Angular 1 Template Switcher.
