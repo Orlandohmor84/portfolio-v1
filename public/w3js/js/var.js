@@ -70,7 +70,7 @@ var nodeObamacareForm = {
 var nodeExamSimulator = {
     "name" : "Exam Simulator",
     "role" : "Project Manager/Lead Developer",
-    "url" : "http://ibuildweb.solutions/sites/halexia/#/home",
+    "url" : "http://examsimulator.xyz",
     "urlPretty" : "Exam Simulator",
     "desc" : "Leading small team in agile web app development of JavaScript-based practice exam platform. My primary responsibilities include project management, AngularJS development, and front-end design.",
     "tools" : "AngularJS, HTML5, CSS3, JavaScript, Bootstrap, LESS, JSON, Git, GulpJS, Bitbucket, Sublime Text 3, QuickEdit Pro",
