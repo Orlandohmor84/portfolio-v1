@@ -29,7 +29,7 @@ requireDir('./gulp-tasks/php/php/');
 //W3JS Version Tasks
 requireDir('./gulp-tasks/w3js/');
 requireDir('./gulp-tasks/w3js/html/');
-requireDir('./gulp-tasks/w3js/data/');
+requireDir('./gulp-tasks/w3js/js/');
 
 //Global Paths
 var IMG_PATH = './src/assets/img/**/*.{png,jpg,jpeg,svg,gif}';
@@ -126,7 +126,7 @@ var SCRIPTS_PATH = './src/angular1/assets/js/scripts.js';
 
 
 	//Default Task
-	gulp.task('w3js-default', ['styles-main', 'scripts', 'w3js-html', 'w3js-includes'], function() {
+	gulp.task('w3js-default', ['styles-main', 'scripts', 'w3js-js', 'w3js-html', 'w3js-includes'], function() {
 		console.log('starting default w3js task');
 	});
 /*----------- End PHP Taskrunners ----------*/
