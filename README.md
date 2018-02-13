@@ -13,6 +13,7 @@
 
 ## Release History ##
 
+* v2.2.6 - 02/13/2018 - JS Minification.
 * v2.2.5 - 02/13/2018 - Added AddThis Share Banner.
 * v2.2.4 - 02/13/2018 - Added Google Analytics.
 * v2.2.3 - 02/12/2018 - Updated Sitemap.

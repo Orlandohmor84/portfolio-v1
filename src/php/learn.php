@@ -36,7 +36,7 @@
 
     <!-- Vendors -->
     <script src="../vendor/jquery/jquery-2.2.4.min.js"></script>
-    <script src="../vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script src="../vendor/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -136,7 +136,7 @@
 
     <?php include 'includes/footer.php'; ?>
 
-    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/scripts.min.js"></script>
 
     <script>
         $(document).ready(function() {
