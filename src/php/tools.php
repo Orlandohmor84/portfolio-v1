@@ -11,6 +11,9 @@
     <meta name="keywords" content="<?php echo $keywords; ?>">
 
     <title><?php echo $title; ?> - <?php echo $tagline; ?></title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73691029-2"></script>
+    <script src="http://ibuildweb.site/assets/analytics/script.min.js"></script>
 		
     <!-- Twitter Card Data -->
     <meta name="twitter:card" content="summary_large_image">

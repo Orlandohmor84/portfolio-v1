@@ -13,6 +13,7 @@
 
 ## Release History ##
 
+* v2.2.4 - 02/13/2018 - Added Google Analytics.
 * v2.2.3 - 02/12/2018 - Updated Sitemap.
 * v2.2.2 - 01/30/2018 - W3JS Updates. Updated Exam Sim Link.
 * v2.2.1 - 11/19/2017 - Fixed mobile spacing issue with buttons.

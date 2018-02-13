@@ -1,8 +1,8 @@
-var gulp = require('gulp'); 
-var gulpsync = require('gulp-sync')(gulp);
-var livereload = require('gulp-livereload');
-var requireDir = require('require-dir');
-var htmlmin = require('gulp-htmlmin');
+const gulp = require('gulp'); 
+const gulpsync = require('gulp-sync')(gulp);
+const livereload = require('gulp-livereload');
+const requireDir = require('require-dir');
+const htmlmin = require('gulp-htmlmin');
 
 //Global Tasks
 requireDir('./gulp-tasks/');
@@ -32,19 +32,27 @@ requireDir('./gulp-tasks/w3js/html/');
 requireDir('./gulp-tasks/w3js/js/');
 
 //Global Paths
-var IMG_PATH = './src/assets/img/**/*.{png,jpg,jpeg,svg,gif}';
-var ICONS_PATH = './src/assets/img/icons/*.{png,jpg,jpeg,svg,gif}';
-var LOGOS_PATH = './src/assets/img/logos/*.{png,jpg,jpeg,svg,gif}';
-var SCREENSHOTS_PATH = './src/assets/img/screenshots/*.{png,jpg,jpeg,svg,gif}';
-var LESS_PATH = './src/assets/less/styles.less';
-var SCRIPTS_PATH = './src/angular1/assets/js/scripts.js';
+const IMG_PATH = './src/assets/img/**/*.{png,jpg,jpeg,svg,gif}';
+const ICONS_PATH = './src/assets/img/icons/*.{png,jpg,jpeg,svg,gif}';
+const LOGOS_PATH = './src/assets/img/logos/*.{png,jpg,jpeg,svg,gif}';
+const SCREENSHOTS_PATH = './src/assets/img/screenshots/*.{png,jpg,jpeg,svg,gif}';
+const LESS_PATH = './src/assets/less/styles.less';
+const SCRIPTS_PATH = './src/angular1/assets/js/scripts.js';
+const ANALYTICS_PATH = './src/assets/analytics/*.js';
+
+/*----- Start Cross Framework Taskrunners -----*/
+    //All HTML Template Task
+	gulp.task('all-html-tmpl', ['html', 'ang1-html', 'jquery-html', 'php', 'w3js-html'], function() {
+		console.log('Completed all HTML template task');
+	});
+/*----- End Cross Framework Taskrunners -----*/
 
 /*----------- Start Angular 1 Taskrunners ----------*/
 	//Framework Specific Paths
-	var ANG1_APP_PATH = './src/angular1/assets/app/app.js';
-	var ANG1_CONTROLLERS_PATH = './src/angular1/app/controllers/*.js';
-	var ANG1_SRC_PATH = './src/angular1/*.html';
-	var ANG1_VIEWS_PATH = './src/views/angular1/*.html';
+	const ANG1_APP_PATH = './src/angular1/assets/app/app.js';
+	const ANG1_CONTROLLERS_PATH = './src/angular1/app/controllers/*.js';
+	const ANG1_SRC_PATH = './src/angular1/*.html';
+	const ANG1_VIEWS_PATH = './src/views/angular1/*.html';
 
 	//Watch
 	gulp.task('ang1-watch', ['ang1-default'], function() {
@@ -112,7 +120,7 @@ var SCRIPTS_PATH = './src/angular1/assets/js/scripts.js';
 /*----------- Start W3JS Taskrunners ----------*/
 	//Framework Specific Paths
 	const W3JS_HTML_PATH = 'src/w3js/*.html';
-	const W2JS_INCLUDES_PATH = './src/w3js/includes/**/*.html';
+	const W3JS_INCLUDES_PATH = './src/w3js/includes/**/*.html';
 
 	//Watch
 	gulp.task('w3js-watch', ['w3js-default'], function() {
@@ -129,4 +137,4 @@ var SCRIPTS_PATH = './src/angular1/assets/js/scripts.js';
 	gulp.task('w3js-default', ['styles-main', 'scripts', 'w3js-js', 'w3js-html', 'w3js-includes'], function() {
 		console.log('starting default w3js task');
 	});
-/*----------- End PHP Taskrunners ----------*/
+/*----------- End W3JS Taskrunners ----------*/
