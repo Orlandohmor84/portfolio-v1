@@ -32,6 +32,7 @@ requireDir('./gulp-tasks/w3js/html/');
 requireDir('./gulp-tasks/w3js/js/');
 
 //Global Paths
+const SRC_PATH = './src/*.html';
 const IMG_PATH = './src/assets/img/**/*.{png,jpg,jpeg,svg,gif}';
 const ICONS_PATH = './src/assets/img/icons/*.{png,jpg,jpeg,svg,gif}';
 const LOGOS_PATH = './src/assets/img/logos/*.{png,jpg,jpeg,svg,gif}';

@@ -1,12 +1,14 @@
-var gulp = require('gulp'); 
-var htmlmin = require('gulp-htmlmin');
+const gulp = require('gulp'); 
+const htmlmin = require('gulp-htmlmin');
 
 //Favicon Generator
-var realFavicon = require ('gulp-real-favicon');
-var fs = require('fs');
+const realFavicon = require ('gulp-real-favicon');
+const fs = require('fs');
 
 // File where the favicon markups are stored
-var FAVICON_DATA_FILE = 'faviconData.json';
+const FAVICON_DATA_FILE = 'faviconData.json';
+
+const SRC_PATH = './src/*.html';
 
 // Generate the icons. This task takes a few seconds to complete.
 // You should run it at least once to create the icons. Then,
@@ -78,7 +80,7 @@ gulp.task('generate-favicon', function(done) {
 // this task whenever you modify a page. You can keep this task
 // as is or refactor your existing HTML pipeline.
 gulp.task('html', function() {
-	return gulp.src([ './src/index.html' ])
+	return gulp.src(SRC_PATH)
 		.pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
 		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest('./public/'));
@@ -89,7 +91,7 @@ gulp.task('html', function() {
 // Run this task from time to time. Ideally, make it part of your
 // continuous integration system.
 gulp.task('check-for-favicon-update', function(done) {
-	var currentVersion = JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).version;
+	const currentVersion = JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).version;
 	realFavicon.checkForUpdates(currentVersion, function(err) {
 		if (err) {
 			throw err;

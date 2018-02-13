@@ -13,6 +13,7 @@
 
 ## Release History ##
 
+* v2.2.7 - 02/13/2018 - Custom 404 page. Redirect www to non-www.
 * v2.2.6 - 02/13/2018 - JS Minification.
 * v2.2.5 - 02/13/2018 - Added AddThis Share Banner.
 * v2.2.4 - 02/13/2018 - Added Google Analytics.

@@ -3,8 +3,8 @@ ErrorDocument 404 404.html
 RewriteEngine on
 
 #Force non-www:
-RewriteCond %{HTTP_HOST} ^www\.dev.ibuilweb\.solutions [NC]
-RewriteRule ^(.*)$ http://dev.ibuildweb.solutions/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\ibuildweb\.site [NC]
+RewriteRule ^(.*)$ http://ibuildweb.site/$1 [L,R=301]
 
 #Blocks common botnet scripts that automatically look for software vulnerabilities:
 RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
@@ -55,6 +55,6 @@ Header set X-XSS-Protection "1; mode=block"
         RewriteCond %{QUERY_STRING} _escaped_fragment_
         
         # Only proxy the request to Prerender if it's a request for HTML
-        RewriteRule ^(?!.*?(\.js|\.css|\.xml|\.less|\.png|\.jpg|\.jpeg|\.gif|\.pdf|\.doc|\.txt|\.ico|\.rss|\.zip|\.mp3|\.rar|\.exe|\.wmv|\.doc|\.avi|\.ppt|\.mpg|\.mpeg|\.tif|\.wav|\.mov|\.psd|\.ai|\.xls|\.mp4|\.m4a|\.swf|\.dat|\.dmg|\.iso|\.flv|\.m4v|\.torrent|\.ttf|\.woff))(.*) http://service.prerender.io/http://dev.ibuildweb.solutions/$2 [P,L]
+        RewriteRule ^(?!.*?(\.js|\.css|\.xml|\.less|\.png|\.jpg|\.jpeg|\.gif|\.pdf|\.doc|\.txt|\.ico|\.rss|\.zip|\.mp3|\.rar|\.exe|\.wmv|\.doc|\.avi|\.ppt|\.mpg|\.mpeg|\.tif|\.wav|\.mov|\.psd|\.ai|\.xls|\.mp4|\.m4a|\.swf|\.dat|\.dmg|\.iso|\.flv|\.m4v|\.torrent|\.ttf|\.woff))(.*) http://service.prerender.io/http://ibuildweb.site/$2 [P,L]
     </IfModule>
 </IfModule>
