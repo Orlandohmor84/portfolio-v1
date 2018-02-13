@@ -45,15 +45,21 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script type="application/ld+json">
+    <script type='application/ld+json'> 
         {
-            "@context": "http://schema.org/",
-            "@type": "website",
-            "name": "ibuildwebsite",
-            "image": "http://ibuildweb.site/mstile-310x310.png",
-            "description": "<?php echo $description; ?>",
+            "@context": "http://www.schema.org",
+            "@type": "person",
+            "name": "Orlando Morales",
+            "jobTitle": "Web Developer",
+            "url": "ibuildweb.site",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Winter Park",
+                "addressRegion": "FL",
+                "postalCode": "32792"
+            },
+            "email": "admin@ibuildweb.solutions"
         }
-            
     </script>
 
 </head>
