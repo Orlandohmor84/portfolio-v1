@@ -5,7 +5,7 @@
 
 ## Workflow ##
 
-* Clone the repo: `git clone https://Orlandohmor@bitbucket.org/ibuildwebs/plain.git`
+* Clone the repo: `git clone https://bitbucket.org/ibuildwebs/plain.git`
 * Install dependencies.
 * Checkout, branch, and create pull requests for merge in small modular intervals
 * Use tags for Version Control following the major.minor.patch design
@@ -13,7 +13,8 @@
 
 ## Release History ##
 
-* v2.2.2 - 02/30/2018 - W3JS Updates. Updated Exam Sim Link.
+* v2.2.3 - 02/12/2018 - Updated Sitemap.
+* v2.2.2 - 01/30/2018 - W3JS Updates. Updated Exam Sim Link.
 * v2.2.1 - 11/19/2017 - Fixed mobile spacing issue with buttons.
 * v2.2.0 - 11/16/2017 - Added jQuery Version. Updated Sitemap.
 * v2.1.0 - 11/14/2017 - Added w3.js Version. Updated Sitemap.
@@ -35,7 +36,7 @@
 
 ## Bugs and Issues ##
 
-Find a bug or an issue with this website? [Open a new issue](https://Orlandohmor@bitbucket.org/ibuildwebs/plain/issues) here on Bitbucket
+Find a bug or an issue with this website? [Open a new issue](https://@bitbucket.org/ibuildwebs/plain/issues) here on Bitbucket
 
 ## Copyright and License ##
 

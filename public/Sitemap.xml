@@ -1,18 +1,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://ibuildweb.site/index,html</loc>
+        <loc>http://ibuildweb.site/index.html</loc>
         <lastmod>2017-11-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
     <url>
         <loc>http://ibuildweb.site/angular1/#/start</loc>
-        <lastmod>2017-11-13</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>http://ibuildweb.site/php/index.php</loc>
         <lastmod>2017-11-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
@@ -54,6 +48,12 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>http://ibuildweb.site/php/index.php</loc>
+        <lastmod>2017-11-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>http://ibuildweb.site/php/deploy.php</loc>
         <lastmod>2017-11-13</lastmod>
         <changefreq>weekly</changefreq>
@@ -82,7 +82,8 @@
         <lastmod>2017-11-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.4</priority>
-        <url>
+    </url>
+    <url>
         <loc>http://ibuildweb.site/w3js/deploy.html</loc>
         <lastmod>2017-11-16</lastmod>
         <changefreq>weekly</changefreq>
