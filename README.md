@@ -13,6 +13,7 @@
 
 ## Release History ##
 
+* v2.2.10 - 09/27/2020 - Updated config files.
 * v2.2.9 - 02/16/2018 - Fixed bug w/ 404 Redirect.
 * v2.2.8 - 02/13/2018 - Updated Microdata.
 * v2.2.7 - 02/13/2018 - Custom 404 page. Redirect www to non-www.
