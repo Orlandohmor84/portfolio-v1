@@ -1,9 +1,9 @@
 # [iBuildWeb.Site](http://ibuildweb.site/) #
 
 * Portfolio Web App for Orlando Morales
-* Version 2.2
+* Version 2.3.0
 
-## Workflow ##
+## Workflow (old) ##
 
 * Clone the repo: `git clone https://bitbucket.org/ibuildwebs/plain.git`
 * Install dependencies.
@@ -12,8 +12,19 @@
 * Utilize Gulp task runners to automate workflow
 * Deploy to production site using FTP
 
+## Workflow (NEW) ##
+
+* Clone the repo: `git clone https://github.com/Orlandohmor84/portfolio-v1.git`
+* DO NOT ALTER MASTER BRANCH
+* Production branch is now called no-build
+* ONLY EDIT FILES IN PUBLIC DIRECTORY - DO NOT EDIT ANY SOURCE/BUILD FILES UNTIL DEPENDENCIES ARE UPDATED
+* Checkout, branch, and create pull requests for merge in small modular intervals
+* Use tags for Version Control following the major.minor.patch design
+* Deploy to production site using FTP from no-build branch
+
 ## Release History ##
 
+* v2.3.0 - 09/11/2024 - Add Contact Forms. Start Editing in Public Dir.
 * v2.2.10 - 09/27/2020 - Updated config files.
 * v2.2.9 - 02/16/2018 - Fixed bug w/ 404 Redirect.
 * v2.2.8 - 02/13/2018 - Updated Microdata.
