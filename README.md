@@ -10,6 +10,7 @@
 * Checkout, branch, and create pull requests for merge in small modular intervals
 * Use tags for Version Control following the major.minor.patch design
 * Utilize Gulp task runners to automate workflow
+* Deploy to production site using FTP
 
 ## Release History ##
 
