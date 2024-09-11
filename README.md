@@ -1,7 +1,7 @@
 # [iBuildWeb.Site](http://ibuildweb.site/) #
 
 * Portfolio Web App for Orlando Morales
-* Version 2.3.0
+* Version 2.3.1
 
 ## Workflow (old) ##
 
@@ -24,6 +24,7 @@
 
 ## Release History ##
 
+* v2.3.1 - 09/11/2024 - Removed Broken Link to Script.
 * v2.3.0 - 09/11/2024 - Add Contact Forms. Start Editing in Public Dir.
 * v2.2.10 - 09/27/2020 - Updated config files.
 * v2.2.9 - 02/16/2018 - Fixed bug w/ 404 Redirect.
